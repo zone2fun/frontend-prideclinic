@@ -20,8 +20,18 @@
 
 }
 
+@keyframes expandLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .active hr {
-  @apply block
+  @apply block w-0 h-[2px] bg-blue-500 transition-all duration-500;
+  animation: expandLine 0.5s ease-out forwards;
 }
 
 ::-webkit-scrollbar{

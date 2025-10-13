@@ -9,10 +9,15 @@ import MyProfile from "./pages/MyProfile"
 import Appoinment from "./pages/Appoinment"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import { ToastContainer, toast } from 'react-toastify';
+import PaymentSuccess from "./pages/PaymentSuccess"
+import ProtectedRoute from "./components/ProtectedRoute"
+
 
 const App = () => {
   return (
     <div className="mx-4 sm:mx-[10%]">
+      <ToastContainer/>
       <Navbar/>
        <Routes>
           <Route path="/" element={<Home/>} />
@@ -20,10 +25,17 @@ const App = () => {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/doctors" element={<Doctors/>} />
+          <Route path="/payment-success" element={<PaymentSuccess/>} />
           <Route path="/doctors/:speciality" element={<Doctors/>} />
-          <Route path="/my-appointment" element={<MyAppointment/>} />
-          <Route path="/appointment/:docId" element={<Appoinment/>} />
-          <Route path="/my-profile" element={<MyProfile/>} />
+          
+          
+          <Route element={<ProtectedRoute/>}>
+
+             <Route path="/my-appointment" element={<MyAppointment/>} />
+             <Route path="/appointment/:docId" element={<Appoinment/>} />
+             <Route path="/my-profile" element={<MyProfile/>} />
+
+          </Route>
        </Routes>
        <Footer/>
 
