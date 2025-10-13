@@ -121,6 +121,7 @@ const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
    }
 
    useEffect(()=>{
+       console.log("doctors:", doctors)
      fetchDocInfo()
    },[doctors, docId])
 
