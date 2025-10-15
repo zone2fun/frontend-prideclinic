@@ -29,13 +29,13 @@ const App = () => {
           <Route path="/doctors/:speciality" element={<Doctors/>} />
           
           
-          <Route element={<ProtectedRoute/>}>
+         
 
              <Route path="/my-appointment" element={<MyAppointment/>} />
              <Route path="/appointment/:docId" element={<Appoinment/>} />
              <Route path="/my-profile" element={<MyProfile/>} />
 
-          </Route>
+         
        </Routes>
        <Footer/>
 
