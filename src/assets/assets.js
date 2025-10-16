@@ -62,29 +62,30 @@ export const assets = {
 
 export const specialityData = [
     {
-        speciality: 'General physician',
-        image: General_physician
-    },
-    {
-        speciality: 'Gynecologist',
-        image: Gynecologist
-    },
-    {
-        speciality: 'Dermatologist',
-        image: Dermatologist
-    },
-    {
-        speciality: 'Pediatricians',
-        image: Pediatricians
-    },
-    {
-        speciality: 'Neurologist',
-        image: Neurologist
-    },
-    {
-        speciality: 'Gastroenterologist',
-        image: Gastroenterologist
-    },
+    speciality: 'แพทย์ทั่วไป',
+    image: General_physician
+},
+{
+    speciality: 'สูตินรีแพทย์',
+    image: Gynecologist
+},
+{
+    speciality: 'แพทย์ผิวหนัง',
+    image: Dermatologist
+},
+{
+    speciality: 'กุมารแพทย์',
+    image: Pediatricians
+},
+{
+    speciality: 'แพทย์ระบบประสาท',
+    image: Neurologist
+},
+{
+    speciality: 'แพทย์ทางเดินอาหาร',
+    image: Gastroenterologist
+},
+
 ]
 
 export const doctors = [
