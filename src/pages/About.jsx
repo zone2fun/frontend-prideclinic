@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
         <div className="text-3xl text-center mt-10">
-           <p>เกี่ยวกับเรา <span className="font-bold">US</span></p>
+           <p>เกี่ยวกับ <span className="font-bold">เรา</span></p>
         </div>
           
        
