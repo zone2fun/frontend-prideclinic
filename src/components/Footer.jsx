@@ -11,17 +11,17 @@ const Footer = () => {
               </div>
             {/* center section */}
                <div>
-                   <p className="text-3xl font-medium mb-5">Company</p>
+                   <p className="text-3xl font-medium mb-5">คลีนิกของเรา</p>
                      <ul className="flex flex-col gap-2 text-grey-600">
-                        <li>Home</li>
-                        <li>About us</li>
-                        <li>Contact us</li>
-                        <li>Policy privacy</li>
+                        <li>หน้าแรก</li>
+                        <li>เกี่ยวกับเรา</li>
+                        <li>ติดต่อเรา</li>
+                        <li>ร่วมงานกับเรา</li>
                      </ul>
                </div>
             {/* right section */}
               <div>
-                  <p className="text-3xl font-medium mb-5">Get in touch</p>
+                  <p className="text-3xl font-medium mb-5">ปัญญาการใช้ระบบ</p>
                     <ul className="flex flex-col gap-2 text-grey-600">
                        <li>061 454 4516</li>
                        <li>webmaster@prideclinic.com</li>
