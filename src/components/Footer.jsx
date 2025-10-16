@@ -7,7 +7,7 @@ const Footer = () => {
             {/* left section */}
               <div >
                  <img className="w-50 mb-5" src={assets.logo_clinic} alt="" />
-                 <p className="w-full md:w-2/3 text-gray-600 leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eveniet quaerat magnam fugiat culpa accusamus quis libero doloremque odio dolor pariatur molestias iste tempore minus! Nobis quam distinctio officiis vero.</p>
+                 <p className="w-full md:w-2/3 text-gray-600 leading-6">Pride Clinic มุ่งมั่นในการดูแลสุขภาพของคุณด้วยความใส่ใจ โดยทีมแพทย์ผู้เชี่ยวชาญหลากหลายสาขา เราให้บริการตรวจ วินิจฉัย และรักษาอย่างครบวงจรในบรรยากาศที่อบอุ่นและเป็นกันเอง เพื่อให้ทุกคนได้รับการดูแลอย่างดีที่สุดทั้งร่างกายและจิตใจ</p>
               </div>
             {/* center section */}
                <div>
@@ -25,6 +25,7 @@ const Footer = () => {
                     <ul className="flex flex-col gap-2 text-grey-600">
                        <li>061 454 4516</li>
                        <li>webmaster@prideclinic.com</li>
+                       <li>ระบบจองคิวแพทย์จัดทำโดย ธนกฤต ธวัฒน์ธนเดช</li>
                     </ul>
               </div>
         </div>

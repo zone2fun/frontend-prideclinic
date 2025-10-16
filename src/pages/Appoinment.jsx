@@ -12,7 +12,7 @@ const Appoinment = () => {
    console.log({docId})
    const { doctors, currencySymbol, backendUrl, token, getDoctorsData } = useContext(AppContext);
 
-const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+const daysOfWeek = ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์'];
 
     const [docInfo, setDocInfo] = useState(null)
     const [ docSlot, setDocSlot ] = useState([])
@@ -154,17 +154,17 @@ const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
             {/* Doctor About */}
             <div>
-               <p className="flex item-center gap-1 text-sm font-medium text-gray-900 mt-3">About <img src={assets.info_icon} alt="" /></p>
+               <p className="flex item-center gap-1 text-sm font-medium text-gray-900 mt-3">ข้อมูลแพทย์ <img src={assets.info_icon} alt="" /></p>
                <p className="text-sm text-gray-500 max-w-[700px] mt-1">{docInfo.about}</p>
             </div>
 
-            <p>Appointment fee: <span className="text-gray-500 font-bold">{currencySymbol}{docInfo.fees}</span></p>
+            <p>ค่าธรรมเนียม: <span className="text-gray-500 font-bold">{currencySymbol}{docInfo.fees}</span></p>
           </div>
        </div>  
 
          {/* ----------  Booking Slot ------------------------- */}
           <div className="sm:ml-72 sm:pl-4 mt-4 font-medium text-gray-700">
-           <p>Booking slots</p>
+           <p>เลือกวันที่เข้ารับบริการ</p>
            <div className="flex items-center gap-3 w-full overflow-x-scroll mt-4">
               {
                 docSlot.length && docSlot.map((item, index)=>(
@@ -187,7 +187,7 @@ const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
                 </div>
 
                 
-                   <button onClick={bookAppointment} className="bg-primary text-white text-sm font-light rounded-full py-4 px-14 mt-10 hover:scale-105 transition-all duration-300">Book and appointment</button>
+                   <button onClick={bookAppointment} className="bg-primary text-white text-sm font-light rounded-full py-4 px-14 mt-10 hover:scale-105 transition-all duration-300">ยืนยันวันเข้าพบแพทย์</button>
                
                 
 

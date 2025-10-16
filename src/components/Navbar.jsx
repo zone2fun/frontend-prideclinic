@@ -39,19 +39,19 @@ const Navbar = () => {
         <img onClick={()=>navigate('/')} className='h-15 cursor-pointer' src={assets.logo_clinic} alt="" />
         <ul className='hidden md:flex item-start gap-5 font-medium'>
             <NavLink to='/'>
-                <li className='py-1'>HOME</li>
+                <li className='py-1'>หน้าแรก</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
              </NavLink>
             <NavLink to='/doctors'>
-                <li className='py-1'>DOCTORS</li>
+                <li className='py-1'>รายชื่อแพทย์</li>
                  <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
             </NavLink>
             <NavLink to='/about'>
-                <li className='py-1'>ABOUT US</li>
+                <li className='py-1'>เกี่ยวกับเรา</li>
                  <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
             </NavLink>
             <NavLink to='/contact'>
-                <li className='py-1'>CONTACT</li>
+                <li className='py-1'>ติดต่อเรา</li>
                  <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
             </NavLink>
          
@@ -66,9 +66,9 @@ const Navbar = () => {
                          open && (
                                <div className={`absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20`}>
                       <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4 shadow'>
-                         <p onClick={()=> navigate('/my-profile')} className='hover:text-black cursor-pointer'>My Profile</p>
-                         <p onClick={()=> navigate('/my-appointment')} className='hover:text-black cursor-pointer'>My Appointments</p>
-                         <p onClick={logout} className='hover:text-black cursor-pointer'>Logout</p>
+                         <p onClick={()=> navigate('/my-profile')} className='hover:text-black cursor-pointer'>โปรไฟล์ของฉัน</p>
+                         <p onClick={()=> navigate('/my-appointment')} className='hover:text-black cursor-pointer'>การนัดหมายของฉัน</p>
+                         <p onClick={logout} className='hover:text-black cursor-pointer'>ออกจากระบบ</p>
                       </div>    
                     </div> 
                          )
@@ -86,10 +86,10 @@ const Navbar = () => {
                      <img className='w-7' onClick={()=>setShowMenu(false)} src={assets.cross_icon} alt="" />
                  </div>
                  <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
-                     <NavLink onClick={()=>setShowMenu(false)}  to='/'><p className='px-4 py-2 rounded inline-block'>Home</p></NavLink>
-                     <NavLink onClick={()=>setShowMenu(false)}  to='/doctors'><p className='px-4 py-2 rounded inline-block'>All Doctors</p></NavLink>
-                     <NavLink onClick={()=>setShowMenu(false)}  to='/about'><p className='px-4 py-2 rounded inline-block'>About</p></NavLink>
-                     <NavLink onClick={()=>setShowMenu(false)}  to='/contact'><p className='px-4 py-2 rounded inline-block'>Contact us</p></NavLink>
+                     <NavLink onClick={()=>setShowMenu(false)}  to='/'><p className='px-4 py-2 rounded inline-block'>หน้าแรก</p></NavLink>
+                     <NavLink onClick={()=>setShowMenu(false)}  to='/doctors'><p className='px-4 py-2 rounded inline-block'>รายชื่อแพทย์</p></NavLink>
+                     <NavLink onClick={()=>setShowMenu(false)}  to='/about'><p className='px-4 py-2 rounded inline-block'>เกี่ยวกับเรา</p></NavLink>
+                     <NavLink onClick={()=>setShowMenu(false)}  to='/contact'><p className='px-4 py-2 rounded inline-block'>ติดต่อเรา</p></NavLink>
                  </ul>
             </div>
             

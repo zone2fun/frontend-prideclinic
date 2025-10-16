@@ -5,8 +5,8 @@ import { specialityData } from "../assets/assets"
 const SpecialityMenu = () => {
   return (
     <div className="flex flex-col items-center gap-4 py-16 text-gray-900" id='speciality'>
-        <h1 className="text-3xl font-medium">Find The Speciality</h1>
-        <p className="sm:w-1/3 text-center text-sm">Simply browse through our extensive list of the trust doctors, schedule your appointment hassle-free.</p>
+        <h1 className="text-3xl font-medium">ค้นหาสาขาแพทย์ตามความชำนาญ</h1>
+        <p className="sm:w-1/3 text-center text-sm">เพื่อให้ง่ายต่อการจอง ลูกค้าสามารถเลือกตามความชำนาญของแพทย์ได้ค่ะ</p>
         <div className="flex sm:justify-center gap-4 pt-5 w-full overflow-scroll">
            {specialityData.map((item, index)=>(
               <Link onClick={()=>scrollTo(0,0)} className="flex flex-col items-center text-xs cursor-pointer flex-shrink-0 hover:translate-y-[-10px] transition-all duration-300" key={index} to={`/doctors/${item.speciality}`}>
