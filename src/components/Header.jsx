@@ -10,7 +10,7 @@ const Header = () => {
                 ลูกค้าสามารถจองคิวคุณหมอได้ 24 ชั่วโมง.
              </p>
               <div className='flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light'>
-                 <img src={assets.hero_doctors} alt="" />
+                 <img src={assets.group_profiles} alt="" />
                  <p>เรามีตารางแพทย์ในระบบ สะดวกในการนัดวันเข้าพบ<br className='hidden sm:block'/>ไม่ต้องโทรเข้ามาเพียงคลิ๊กเดียวจองได้ทันที</p>
               </div>
               <a href="#speciality" className='flex items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300'>
@@ -19,7 +19,7 @@ const Header = () => {
          </div>
         {/* Right side */}
         <div className='md:w-1/2 relative'>
-            <img className='w-full md:absolute bottom-0 h-auto rounded-lg' src={assets.header_img} alt="" />
+            <img className='w-full md:absolute bottom-0 h-auto rounded-lg' src={assets.hero_doctors} alt="" />
         </div>
     </div>
   )
