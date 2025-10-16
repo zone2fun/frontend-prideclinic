@@ -17,9 +17,10 @@ const Footer = () => {
                <div>
                    <p className="text-3xl font-medium mb-5">คลีนิกของเรา</p>
                      <ul className="flex flex-col gap-2 text-grey-600">
-                        <li onClick={()=>{navigate('/'); scrollTo(0,0)}}>หน้าแรก</li>
-                        <li onClick={()=>{navigate('/about'); scrollTo(0,0)}}>เกี่ยวกับเรา</li>
-                        <li onClick={()=>{navigate('/contact');scrollTo(0,0)}}>ติดต่อเรา</li>
+                        <li className="hover:cursor-pointer" onClick={()=>{navigate('/'); scrollTo(0,0)}}>หน้าแรก</li>
+                        <li className="hover:cursor-pointer" onClick={()=>{navigate('/doctors'); scrollTo(0,0)}}>จองคิวแพทย์</li>
+                        <li className="hover:cursor-pointer" onClick={()=>{navigate('/about'); scrollTo(0,0)}}>เกี่ยวกับเรา</li>
+                        <li className="hover:cursor-pointer" onClick={()=>{navigate('/contact');scrollTo(0,0)}}>ติดต่อเรา</li>
                         <li>ร่วมงานกับเรา</li>
                      </ul>
                </div>
